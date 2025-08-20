@@ -1,0 +1,25 @@
+JOB MARKET ANALYSIS SUMMARY
+==================================================
+
+Analysis Date: 2025-08-20 16:45:56
+Total Jobs Analyzed: 16
+Unique Companies: 15
+Unique Locations: 0
+
+TOP 10 COMPANIES:
+1. Aon: 2 jobs
+2. Rockefeller Capital Management: 1 jobs
+3. Assured Guaranty: 1 jobs
+4. University of North Texas: 1 jobs
+5. County of DuPage: 1 jobs
+6. Delta Dental of Wisconsin Inc: 1 jobs
+7. BlackRock Investments: 1 jobs
+8. First Horizon: 1 jobs
+9. Cerris: 1 jobs
+10. Rondout Valley Central School District: 1 jobs
+
+TOP 10 LOCATIONS:
+
+TOP 15 SKILLS:
+1. R: 16 mentions
+2. Api: 1 mentions
