@@ -1,49 +1,50 @@
-📊 Data Science Survey Analysis (2017–2021)
+# Job Market Analysis from Static HTML
 
-This project analyzes the Kaggle Data Science & Machine Learning Survey (2017–2021) to explore key trends in tools, salaries, education, and demographics among data professionals.
-It includes data cleaning, exploratory data analysis (EDA), and interactive visualizations, all built in Python.
+This repository contains a Python-based job scraper and analyzer. It extracts job listings from a static HTML page (e.g., downloaded from Google Drive), cleans the data, identifies in-demand skills, visualizes trends, and exports detailed reports.
 
+## Features
 
-📂 Dataset
+- Fetch HTML content from a URL
+- Parse job listings (title, company, location, description, salary, skills)
+- Clean and structure scraped data
+- Analyze:
+  - Top hiring companies
+  - Top job locations
+  - Most in-demand skills
+  - Skills by city
+- Visualizations:
+  - Bar plots, heatmaps, pie charts
+  - Word frequency for job titles
+- Export:
+  - Cleaned job data (`CSV`)
+  - Skills data (`CSV`)
+  - Summary report (`TXT`)
 
-Source: Kaggle "Data Science and Machine Learning Survey" (2017–2021)
+## Usage
 
-Link: Kaggle Dataset
+```python
+from job_scraper_analyzer import JobScraperAnalyzer
 
+# Initialize analyzer
+analyzer = JobScraperAnalyzer()
 
-📑 Covered Analysis
+# URL to static HTML file (Google Drive or local)
+file_url = "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"
 
-✔ Data Cleaning & Preprocessing
-✔ Exploratory Data Analysis (EDA)
-✔ Demographics of Data Scientists (age, education, geography)
-✔ Tools & Technologies trends (Python, R, SQL, Cloud, ML frameworks)
-✔ Salary Distribution & Career Path insights
-✔ Visualizations (bar charts, line plots, heatmaps, summary dashboards)
+# Run full analysis
+analyzer.run_complete_analysis(file_url)
+```
 
-🛠 Tools & Libraries
+## Outputs
 
-Python
+* `job_analysis_results_jobs.csv` → Cleaned job listings
+* `job_analysis_results_skills.csv` → Skills extracted per job
+* `job_analysis_results_summary.txt` → Summary report
+* Visual plots (displayed inline)
 
-Pandas & NumPy
+---
 
-Matplotlib & Seaborn
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/YOUR_FILE_ID_HERE)
 
-Google Colab (execution environment)
-
-▶ How to Run
-
-Clone this repo
-
-git clone https://github.com/your-username/DataScience_Survey_2017_2021.git
-cd DataScience_Survey_2017_2021
-
-
-Place the dataset (survey_2017_2021.csv) inside data/.
-
-Install requirements:
-
-pip install -r requirements.txt
-
-
-Run the notebook in Jupyter or open directly in Colab:
-
+```
+```
